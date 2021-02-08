@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap');
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  background: #E5E5E5;
+  margin: 0;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 789px;
+  min-width: 360px;
+  max-width: 460px;
+  width: 50%;
+  padding: 2em;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+}
+.container-form a {
+  text-decoration: none;
+  color: #0880AE;
+}
+.header-form {
+  color: #2C2738;
+}
+
+.header-form h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin:0;
+}
+.header-form {
+  line-height: 2rem;
+}
+
+.input-group input {
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  padding: 1em;
+  width: 100%;
+  color: #7C9CBF;
+  outline:none;
+}
+.input-group input:focus {
+  box-shadow: inset 0px 0px 0px 2px #0880AE;
+  -moz-box-shadow: inset 0px 0px 0px 2px #0880AE;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #0880AE;
+}
+.input-group label {
+  line-height: 2rem;
+  color:#756F86;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+select:focus {
+  border: 2px solid #0880AE;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 1.25rem;
+  top: calc(40% - 5px);
+  width: 0.625rem;
+  height: 0.625em;
+  border: solid #0880AE;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-select ul {
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  padding: 1.3rem 0;
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  max-height: 200px;
+  overflow: scroll;
+}
+.custom-select li {
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: background 0.3s linear;
+}
+.custom-select li:hover {
+  background: #EBF4F8;
+}
+
+button {
+  background: #0880AE;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  color:#ffffff;
+  outline: none;
+}
+button:disabled {
+  color:#B1B5BF;
+  background: #DBE2EA;
+}
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 4px;
+}
+
+.custom-checkbox  input:checked ~ .checkmark {
+  border-color: #0880AE;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox  input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #0880AE;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.in-valid {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #FF7171;
+}
+
+@media (max-width: 361px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+}
